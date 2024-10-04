@@ -1,8 +1,8 @@
 import requests
 from datetime import datetime
 
-APP_ID = "b16cbfdc"
-API_KEY = "38c6a6cc9e3e8f913597f4b4d81e08ba"
+APP_ID = "YOUR API ID"
+API_KEY = "YOUR API KEY"
 date = datetime.now().strftime("%d/%m/%Y")
 time = datetime.now().time().strftime("%H:%M:%S")
 GENDER = "Male"
@@ -16,7 +16,7 @@ headers = {
 }
 
 exercise_endpoint = "https://trackapi.nutritionix.com/v2/natural/exercise"
-shitty_ENDPOINT = "https://api.sheety.co/ef79976f90df97b4fa7615f09cac5642/workout/sheet1"
+shitty_ENDPOINT = "YOUR SHEETY END POINT"
 
 params = {
     "query": input("Tell me which exercise you did?: "),
@@ -26,7 +26,7 @@ result = response1.json()
 print(result)
 
 headers2 = {
-    "Authorization": "Basic c2h1YmhhbTpzaHViaGFtd29ya291dA=="
+    "Authorization": "YOUR AUTHORIZATION KEY"
 }
 
 duration = response1.json()["exercises"][0]["duration_min"]
