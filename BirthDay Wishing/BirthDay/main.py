@@ -12,7 +12,7 @@ today = (datetime.now().day,datetime.now().month )
 # HINT 2: Use pandas to read the birthdays.csv
 data = pd.read_csv("birthdays.csv")
 
-#Dictionary comprehension template for pandas DataFrame looks like this:
+#Dictionary comprehension templates for pandas DataFrame looks like this:
 birthdays_dict = {(data_row.month, data_row.day):data_row for (index, data_row) in data.iterrows()}
 
 #HINT 4: Then you could compare and see if today's month/day tuple matches one of the keys in birthday_dict like this:
