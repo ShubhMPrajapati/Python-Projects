@@ -3,6 +3,7 @@
 
 import pandas
 import numpy
+import selenuium
 
 data = pandas.read_csv("nato_phonetic_alphabet.csv")
 #TODO 1. Create a dictionary in this format:
